@@ -13,7 +13,6 @@
 	<constant name="struts.devMode" value="true" />
 	<!-- 设置Struts2的默认主题为simple -->
 	<constant name="struts.ui.theme" value="simple" />
-	
 	<!-- 定义一个名为 cxstock 的包，继承 Struts 2 的默认包 -->
     <package name="cxstock" extends="struts-default">
 		<!-- 配置自定义拦截器LoginedCheckInterceptor -->
@@ -35,12 +34,12 @@
 		</global-exception-mappings>	
     </package>
     
-    <package name="main" extends="cxstock" namespace="/">
+   <!--  <package name="main" extends="cxstock" namespace="/">
 		<action name="*_*" class="{1}Action" method="{2}">
 			<result name="input">/login.jsp</result>
 			<result name="success" type="redirect">/jsp/main/index.jsp</result>
 			<interceptor-ref name="loginedCheck"/>
 			<interceptor-ref name="defaultStack"/>
 		</action>
-	</package>
+	</package> -->
 </struts>
