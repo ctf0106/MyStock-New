@@ -18,7 +18,7 @@ public class SearchAction extends BaseAction  {
 	 */
 	public String findKcByParams(){
 		try {
-			this.outListString(searchBiz.findKcByParams(kfid,lbid,search));
+			this.outListStringUpdate(searchBiz.findKcByParams(kfid,lbid,search));
 		} catch (Exception e) {
 			e.printStackTrace();
 			this.outError();

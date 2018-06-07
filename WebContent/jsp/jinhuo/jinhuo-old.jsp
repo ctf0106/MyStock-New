@@ -1,11 +1,7 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
-<%@page import="com.cxstock.biz.power.dto.UserDTO"%>
-<%
-  UserDTO userInfo=(UserDTO)session.getAttribute("userInfo");
-%> 
 <html>
-  <head>          
-  	<title>进货入库</title>   
+  <head>
+  	<title>进货入库</title>
     <link rel="stylesheet" type="text/css" href="../../ext/resources/css/ext-all.css">
     <link rel="stylesheet" type="text/css" href="../../css/ext-icon.css">
     <script type="text/javascript" src="../../ext/adapter/ext/ext-base.js"></script>
@@ -14,9 +10,9 @@
     <script type="text/javascript" src="../../ext/ux/SearchField.js"></script>
     <script type="text/javascript" src="../../js/utils.js"></script>
     <script type="text/javascript" src="../kucun/spxx.js"></script>
-    <script type="text/javascript" src="jinhuo.js"></script>
+    <script type="text/javascript" src="jinhuo-old.js"></script>
   </head>
-  <body> 
-      
+  <body>
+     
   </body>
 </html>

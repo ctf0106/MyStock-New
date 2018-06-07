@@ -38,6 +38,20 @@ public class BaseAction extends ActionSupport {
 			e.printStackTrace();
 		}
 	}
+	public void outListStringUpdate(List list) {
+		try {
+			JSONArray jsonArray = new JSONArray();
+			if (list.size() > 0) {
+				jsonArray = JSONArray.fromObject(list);
+			}
+			String jsonString = "{\"code\":\"0\",\"msg\":\"\",\"count\":" + list.size() + ",\"data\":"
+					+ jsonArray.toString() + "}";
+			outString(jsonString);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	@SuppressWarnings("unchecked")
 	public void outListString(List list) {
