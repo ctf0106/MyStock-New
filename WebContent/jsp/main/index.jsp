@@ -37,7 +37,7 @@
   
   <div class="layui-body body-Basics" style="left:0px;">
     <div class="layui-container" id="mainContainer">
-    	
+   	     
   		
     </div>
   </div>

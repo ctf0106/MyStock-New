@@ -10,10 +10,10 @@
 	<!-- 设置Struts2默认的ObjectFactory为spring -->
 	<constant name="struts.objectFactory" value="spring" />
 	<!-- 设置Struts2应用是否处于开发模式，通常在开发调试阶段设为true,正式上线后可设为false -->
-	<constant name="struts.devMode" value="false" />
+	<constant name="struts.devMode" value="true" />
 	<!-- 设置Struts2的默认主题为simple -->
 	<constant name="struts.ui.theme" value="simple" />
-	
+		<constant name="struts.action.excludePattern" value="/img/menu/.*?" />
 	<!-- 定义一个名为 cxstock 的包，继承 Struts 2 的默认包 -->
     <package name="cxstock" extends="struts-default">
 		<!-- 配置自定义拦截器LoginedCheckInterceptor -->
